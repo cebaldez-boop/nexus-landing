@@ -11,6 +11,8 @@ export const metadata: Metadata = {
   description: "Camada de orquestracao que unifica agentes, canais e sistemas corporativos em uma arquitetura escalavel, observavel e estavel.",
   keywords: ["IA", "infraestrutura", "orquestracao", "agentes", "SaaS", "B2B", "NEXUS"],
   authors: [{ name: "NEXUS" }],
+  icons: { icon: "/favicon.svg", apple: "/favicon.svg" },
+  metadataBase: new URL("https://orbitflow-vault.web.app"),
   openGraph: {
     title: "NEXUS | Infraestrutura de IA em Producao",
     description: "Camada de orquestracao que unifica agentes, canais e sistemas corporativos.",
@@ -25,6 +27,7 @@ export const metadata: Metadata = {
     description: "Camada de orquestracao que unifica agentes, canais e sistemas corporativos.",
   },
   robots: { index: true, follow: true },
+  verification: { google: "GOOGLE_SITE_VERIFICATION" },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
