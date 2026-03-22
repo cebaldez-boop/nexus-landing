@@ -177,7 +177,7 @@ export default function NexusLandingPage() {
       } else {
         setErrorMessage('Nao foi possivel enviar agora. Tente novamente.');
       }
-    } catch (error) {
+    } catch (_error) {
       setErrorMessage('Nao foi possivel enviar agora. Tente novamente.');
     } finally {
       setIsSubmitting(false);
