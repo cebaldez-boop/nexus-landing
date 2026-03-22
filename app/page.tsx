@@ -150,6 +150,7 @@ export default function NexusLandingPage() {
     setErrorMessage('');
     const formData = new FormData(e.currentTarget);
     const payload = {
+      timestamp: new Date().toISOString(),
       name: formData.get('name'),
       email: formData.get('email'),
       company: formData.get('company'),
