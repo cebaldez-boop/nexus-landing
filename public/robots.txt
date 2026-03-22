@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://orbitflow-vault.web.app/sitemap.xml
