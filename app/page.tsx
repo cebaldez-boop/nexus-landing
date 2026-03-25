@@ -140,7 +140,7 @@ export default function NexusLandingPage() {
 
   const scrollToForm = () => {
     document
-      .getElementById('diagnostico-form')
+      .getElementById('diagnóstico-form')
       ?.scrollIntoView({ behavior: 'smooth' });
   };
 
@@ -176,10 +176,10 @@ export default function NexusLandingPage() {
         setIsSuccess(true);
         (e.target as HTMLFormElement).reset();
       } else {
-        setErrorMessage('Nao foi possivel enviar agora. Tente novamente.');
+        setErrorMessage('Não foi possível enviar agora. Tente novamente.');
       }
     } catch (_error) {
-      setErrorMessage('Nao foi possivel enviar agora. Tente novamente.');
+      setErrorMessage('Não foi possível enviar agora. Tente novamente.');
     } finally {
       setIsSubmitting(false);
     }
@@ -194,19 +194,19 @@ export default function NexusLandingPage() {
           <div className="flex flex-col items-start">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight leading-[1.1] mb-6">
               Assuma o controle da sua infraestrutura de{' '}
-              <span className="text-nexus-accent-primary">IA</span> em producao.
+              <span className="text-nexus-accent-primary">IA</span> em produção.
             </h1>
             <p className="text-lg md:text-xl text-nexus-text-secondary leading-relaxed mb-10 max-w-xl">
-              NEXUS e a camada de orquestracao que unifica agentes, canais e
-              sistemas corporativos em uma arquitetura escalavel, observavel e
-              estavel.
+              NEXUS é a camada de orquestração que unifica agentes, canais e
+              sistemas corporativos em uma arquitetura escalável, observável e
+              estável.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto mb-10">
               <button
                 onClick={scrollToForm}
                 className="px-8 py-4 bg-nexus-accent-primary text-[#0A0C10] font-semibold rounded-md hover:bg-[#00CCCC] transition-colors text-center"
               >
-                Agendar diagnostico com especialista
+                Agendar diagnóstico com especialista
               </button>
               <button className="px-8 py-4 bg-transparent border border-nexus-border-subtle text-nexus-text-primary font-medium rounded-md hover:bg-nexus-surface-base transition-colors text-center">
                 Ver arquitetura em 3 minutos
@@ -214,7 +214,7 @@ export default function NexusLandingPage() {
             </div>
             <div className="flex items-center gap-4 border-t border-nexus-border-subtle pt-6 w-full max-w-md">
               <p className="text-sm text-nexus-text-secondary">
-                Utilizado por operacoes de alta complexidade que nao podem
+                útilizado por operações de alta complexidade que Não podem
                 parar.
               </p>
             </div>
@@ -262,10 +262,10 @@ export default function NexusLandingPage() {
           <div className="pt-2 md:pt-4">
             <BulletList
               items={[
-                'Multiplas ferramentas fragmentadas criando silos de dados inoperaveis.',
-                'Fluxos quebrando em producao sem alerta claro nem rastreio.',
-                'Zero visibilidade sobre interacoes, latencia e custo por requisicao.',
-                'Engenharia gastando tempo apagando incendio em integracao instavel.',
+                'Múltiplas ferramentas fragmentadas criando silos de dados inoperáveis.',
+                'Fluxos quebrando em produção sem alerta claro nem rastreio.',
+                'Zero visibilidade sobre interações, latência e custo por requisição.',
+                'Engenharia gastando tempo apagando incêndio em integração instável.',
               ]}
             />
           </div>
@@ -276,15 +276,15 @@ export default function NexusLandingPage() {
       <Section className="bg-nexus-surface-base border-y border-nexus-border-subtle">
         <SectionTitle
           title="O que NEXUS faz"
-          subtitle="A fundacao invisivel para operacoes maduras de IA."
+          subtitle="A fundação invisivel para operações maduras de IA."
         />
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-16">
           <BulletList
             items={[
-              'Orquestra agentes de IA em multiplos canais a partir de um unico nucleo de controle.',
-              'Centraliza monitoramento com metricas de performance e saude em tempo real.',
-              'Da visao visual de fluxos complexos com fallback automatico e roteamento inteligente.',
-              'Garante governanca com logs consolidados e controle de acesso granular.',
+              'Orquestra agentes de IA em múltiplos canais a partir de um único núcleo de controle.',
+              'Centraliza monitoramento com métricas de performance e saúde em tempo real.',
+              'Da visão visual de fluxos complexos com fallback automático e roteamento inteligente.',
+              'Garante governança com logs consolidados e controle de acesso granular.',
             ]}
           />
           <div className="grid gap-4">
@@ -314,11 +314,11 @@ export default function NexusLandingPage() {
           />
           <KpiHighlight
             value="60%"
-            label="menos incidentes de integracao em producao."
+            label="menos incidentes de integração em produção."
           />
           <KpiHighlight
             value="40%"
-            label="mais rapido para colocar novos agentes em producao."
+            label="mais rápido para colocar novos agentes em produção."
           />
           <KpiHighlight
             value="85%"
@@ -329,23 +329,23 @@ export default function NexusLandingPage() {
 
       {/* Depoimentos */}
       <Section className="bg-nexus-surface-base border-y border-nexus-border-subtle">
-        <SectionTitle title="O que dizem as operacoes que rodam na NEXUS" />
+        <SectionTitle title="O que dizem as operações que rodam na NEXUS" />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <TestimonialCard quote="Consolidamos cinco ferramentas em uma so camada de controle. A estabilidade subiu para um nivel que parecia impossivel." />
+          <TestimonialCard quote="Consolidamos cinco ferramentas em uma so camada de controle. A estabilidade subiu para um nivel que parecia impossível." />
           <TestimonialCard quote="Hoje sabemos exatamente o que cada agente faz, quanto custa e onde o gargalo esta. O ponto cego de observabilidade deixou de existir." />
-          <TestimonialCard quote="Um fluxo complexo levava semanas para ir a producao. Com o motor de orquestracao, isso virou questao de dias." />
+          <TestimonialCard quote="Um fluxo complexo levava semanas para ir a produção. Com o motor de orquestração, isso virou questão de dias." />
         </div>
       </Section>
 
       {/* Formulario */}
-      <Section id="diagnostico-form" className="bg-nexus-bg scroll-mt-24">
+      <Section id="diagnóstico-form" className="bg-nexus-bg scroll-mt-24">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl font-semibold text-nexus-text-primary tracking-tight mb-4">
-              Diagnostico de Infra IA focado no seu stack
+              diagnóstico de Infra IA focado no seu stack
             </h2>
             <p className="text-lg text-nexus-text-secondary leading-relaxed">
-              Uma call tecnica direta para mapear seus fluxos atuais,
+              Uma call técnica direta para mapear seus fluxos atuais,
               identificar riscos e projetar ganhos.
             </p>
           </div>
@@ -359,7 +359,7 @@ export default function NexusLandingPage() {
               <div className="bg-nexus-status-success/10 border border-nexus-status-success text-nexus-status-success p-6 rounded-md text-center">
                 <p className="font-semibold text-lg mb-2">Recebido.</p>
                 <p>
-                  Nosso time vai responder em ate 1 dia util com a proposta de
+                  Nosso time vai responder em Até 1 dia útil com a proposta de
                   agenda.
                 </p>
               </div>
@@ -418,7 +418,7 @@ export default function NexusLandingPage() {
                       htmlFor="role"
                       className="text-sm font-medium text-nexus-text-primary"
                     >
-                      Cargo/funcao *
+                      Cargo/função *
                     </label>
                     <input
                       type="text"
@@ -434,7 +434,7 @@ export default function NexusLandingPage() {
                     htmlFor="volume"
                     className="text-sm font-medium text-nexus-text-primary"
                   >
-                    Volume aproximado de requisicoes mensais *
+                    Volume aproximado de requisições mensais *
                   </label>
                   <select
                     id="volume"
@@ -446,14 +446,14 @@ export default function NexusLandingPage() {
                     <option value="" disabled>
                       Selecione uma faixa
                     </option>
-                    <option value="ate-10k">Ate 10.000 requisicoes</option>
+                    <option value="ate-10k">Até 10.000 requisições</option>
                     <option value="10k-100k">
-                      10.000 a 100.000 requisicoes
+                      10.000 a 100.000 requisições
                     </option>
                     <option value="100k-1m">
-                      100.000 a 1 Milhao de requisicoes
+                      100.000 a 1 Milhão de requisições
                     </option>
-                    <option value="mais-1m">+1 Milhao de requisicoes</option>
+                    <option value="mais-1m">+1 Milhão de requisições</option>
                   </select>
                 </div>
                 <div className="flex flex-col gap-2">
@@ -461,7 +461,7 @@ export default function NexusLandingPage() {
                     htmlFor="description"
                     className="text-sm font-medium text-nexus-text-primary"
                   >
-                    Descreva onde sua operacao esta quebrando (Opcional)
+                    Descreva onde sua operação está quebrando (Opcional)
                   </label>
                   <textarea
                     id="description"
@@ -478,7 +478,7 @@ export default function NexusLandingPage() {
                 >
                   {isSubmitting
                     ? 'Enviando...'
-                    : 'Quero o diagnostico da minha infra'}
+                    : 'Quero o diagnóstico da minha infra'}
                 </button>
               </form>
             )}
@@ -491,28 +491,28 @@ export default function NexusLandingPage() {
         <div className="max-w-3xl mx-auto">
           <SectionTitle
             title="FAQ"
-            subtitle="Perguntas frequentes sobre implementacao e arquitetura."
+            subtitle="Perguntas frequentes sobre implementação e arquitetura."
           />
           <div className="space-y-6">
             <FaqItem
-              question="Funciona com o stack que ja tenho hoje?"
-              answer="Sim. NEXUS e agnostico de stack. Acopla na sua infra atual sem reescrever legado ou trocar banco."
+              question="Funciona com o stack que já tenho hoje?"
+              answer="Sim. NEXUS é agnostico de stack. Acopla na sua infra atual sem reescrever legado ou trocar banco."
             />
             <FaqItem
               question="Preciso trocar meus modelos de IA?"
-              answer="Nao. Voce usa seus proprios modelos e/ou os principais provedores via uma interface unica de orquestracao."
+              answer="Nao. Voce usa seus proprios modelos e/ou os principais provedores via uma interface unica de orquestração."
             />
             <FaqItem
               question="Quanto tempo leva para subir o primeiro fluxo?"
               answer="Em media, de 3 a 7 dias, dependendo da complexidade de regras e integracoes."
             />
             <FaqItem
-              question="Quem opera isso: tecnico ou negocio?"
-              answer="Engenharia faz o setup e integracoes. Depois, operacoes/produto ajustam fluxos e regras pela interface visual."
+              question="Quem opera isso: técnico ou negócio?"
+              answer="Engenharia faz o setup e integracoes. Depois, operações/produto ajustam fluxos e regras pela interface visual."
             />
             <FaqItem
-              question="Como fica seguranca e privacidade dos dados?"
-              answer="Trafego fim a fim criptografado. Dados transacionais nao entram em treino externo sem configuracao explicita."
+              question="Como fica segurança e privacidade dos dados?"
+              answer="Trafego fim a fim criptografado. Dados transacionais Não entram em treino externo sem configuracao explicita."
             />
           </div>
         </div>
@@ -522,15 +522,15 @@ export default function NexusLandingPage() {
       <Section className="bg-nexus-surface-elevated border-t border-nexus-border-subtle text-center pb-32">
         <div className="max-w-3xl mx-auto flex flex-col items-center">
           <h2 className="text-3xl md:text-5xl font-semibold text-nexus-text-primary tracking-tight mb-8 leading-tight">
-            Sua <span className="text-nexus-accent-primary">IA</span> ja esta em
-            producao.
-            <br />A diferenca e ter ou nao ter uma infraestrutura sob controle.
+            Sua <span className="text-nexus-accent-primary">IA</span> já está em
+            produção.
+            <br />A diferença e ter ou Não ter uma infraestrutura sob controle.
           </h2>
           <button
             onClick={scrollToForm}
             className="px-10 py-5 bg-nexus-accent-primary text-[#0A0C10] font-bold text-lg rounded-md hover:bg-[#00CCCC] transition-colors shadow-[0_0_20px_rgba(0,230,230,0.3)]"
           >
-            Agendar diagnostico com especialista
+            Agendar diagnóstico com especialista
           </button>
         </div>
       </Section>
