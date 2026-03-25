@@ -214,7 +214,7 @@ export default function NexusLandingPage() {
             </div>
             <div className="flex items-center gap-4 border-t border-nexus-border-subtle pt-6 w-full max-w-md">
               <p className="text-sm text-nexus-text-secondary">
-                útilizado por operações de alta complexidade que Não podem
+                Utilizado por operações de alta complexidade que não podem
                 parar.
               </p>
             </div>
@@ -276,25 +276,25 @@ export default function NexusLandingPage() {
       <Section className="bg-nexus-surface-base border-y border-nexus-border-subtle">
         <SectionTitle
           title="O que NEXUS faz"
-          subtitle="A fundação invisivel para operações maduras de IA."
+          subtitle="A fundação invisível para operações maduras de IA."
         />
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-16">
           <BulletList
             items={[
               'Orquestra agentes de IA em múltiplos canais a partir de um único núcleo de controle.',
               'Centraliza monitoramento com métricas de performance e saúde em tempo real.',
-              'Da visão visual de fluxos complexos com fallback automático e roteamento inteligente.',
+              'Dá visão visual de fluxos complexos com fallback automático e roteamento inteligente.',
               'Garante governança com logs consolidados e controle de acesso granular.',
             ]}
           />
           <div className="grid gap-4">
             <ModuleCard
               title="NEXUS Voice"
-              description="Voz neural plugada direto em fluxos criticos de atendimento e transacao."
+              description="Voz neural plugada direto em fluxos críticos de atendimento e transação."
             />
             <ModuleCard
               title="NEXUS Chat"
-              description="Conversas transacionais assincronas com contexto persistente em escala."
+              description="Conversas transacionais assíncronas com contexto persistente em escala."
             />
             <ModuleCard
               title="NEXUS Connect"
@@ -306,13 +306,11 @@ export default function NexusLandingPage() {
 
       {/* Resultados */}
       <Section className="bg-nexus-bg">
-        <SectionTitle title="Resultados em numeros" />
+        <SectionTitle title="Resultados em números" />
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          <KpiHighlight
-            value="99,9%"
-            label="de uptime em fluxos criticos de missao."
-          />
-          <KpiHighlight
+Tráfego fim            value="99,9%"
+            label="de uptime em fluxos críticos de missão."
+Tráfego fim          <KpiHighlight
             value="60%"
             label="menos incidentes de integração em produção."
           />
@@ -322,7 +320,7 @@ export default function NexusLandingPage() {
           />
           <KpiHighlight
             value="85%"
-            label="de visibilidade de custos por transacao e por modelo."
+            label="de visibilidade de custos por transação e por modelo."
           />
         </div>
       </Section>
@@ -331,9 +329,9 @@ export default function NexusLandingPage() {
       <Section className="bg-nexus-surface-base border-y border-nexus-border-subtle">
         <SectionTitle title="O que dizem as operações que rodam na NEXUS" />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <TestimonialCard quote="Consolidamos cinco ferramentas em uma so camada de controle. A estabilidade subiu para um nivel que parecia impossível." />
-          <TestimonialCard quote="Hoje sabemos exatamente o que cada agente faz, quanto custa e onde o gargalo esta. O ponto cego de observabilidade deixou de existir." />
-          <TestimonialCard quote="Um fluxo complexo levava semanas para ir a produção. Com o motor de orquestração, isso virou questão de dias." />
+          <TestimonialCard quote="Consolidamos cinco ferramentas em uma só camada de controle. A estabilidade subiu para um nível que parecia impossível." />
+          <TestimonialCard quote="Hoje sabemos exatamente o que cada agente faz, quanto custa e onde o gargalo está. O ponto cego de observabilidade deixou de existir." />
+          <TestimonialCard quote="Um fluxo complexo levava semanas para ir à produção. Com o motor de orquestração, isso virou questão de dias." />
         </div>
       </Section>
 
@@ -342,7 +340,7 @@ export default function NexusLandingPage() {
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl font-semibold text-nexus-text-primary tracking-tight mb-4">
-              diagnóstico de Infra IA focado no seu stack
+              Diagnóstico de Infra IA focado no seu stack
             </h2>
             <p className="text-lg text-nexus-text-secondary leading-relaxed">
               Uma call técnica direta para mapear seus fluxos atuais,
@@ -359,7 +357,7 @@ export default function NexusLandingPage() {
               <div className="bg-nexus-status-success/10 border border-nexus-status-success text-nexus-status-success p-6 rounded-md text-center">
                 <p className="font-semibold text-lg mb-2">Recebido.</p>
                 <p>
-                  Nosso time vai responder em Até 1 dia útil com a proposta de
+                  Nosso time vai responder em até 1 dia útil com a proposta de
                   agenda.
                 </p>
               </div>
@@ -496,23 +494,23 @@ export default function NexusLandingPage() {
           <div className="space-y-6">
             <FaqItem
               question="Funciona com o stack que já tenho hoje?"
-              answer="Sim. NEXUS é agnostico de stack. Acopla na sua infra atual sem reescrever legado ou trocar banco."
+              answer="Sim. NEXUS é agnóstico de stack. Acopla na sua infra atual sem reescrever legado ou trocar banco."
             />
             <FaqItem
               question="Preciso trocar meus modelos de IA?"
-              answer="Nao. Voce usa seus proprios modelos e/ou os principais provedores via uma interface unica de orquestração."
+              answer="Não. Você usa seus próprios modelos e/ou os principais provedores via uma interface única de orquestração."
             />
             <FaqItem
               question="Quanto tempo leva para subir o primeiro fluxo?"
-              answer="Em media, de 3 a 7 dias, dependendo da complexidade de regras e integracoes."
+              answer="Em média, de 3 a 7 dias, dependendo da complexidade de regras e integrações."
             />
             <FaqItem
               question="Quem opera isso: técnico ou negócio?"
-              answer="Engenharia faz o setup e integracoes. Depois, operações/produto ajustam fluxos e regras pela interface visual."
+              answer="Engenharia faz o setup e integrações. Depois, operações/produto ajustam fluxos e regras pela interface visual."
             />
             <FaqItem
               question="Como fica segurança e privacidade dos dados?"
-              answer="Trafego fim a fim criptografado. Dados transacionais Não entram em treino externo sem configuracao explicita."
+              answer="Tráfego fim a fim criptografado. Dados transacionais não entram em treino externo sem configuração explícita."
             />
           </div>
         </div>
@@ -524,7 +522,7 @@ export default function NexusLandingPage() {
           <h2 className="text-3xl md:text-5xl font-semibold text-nexus-text-primary tracking-tight mb-8 leading-tight">
             Sua <span className="text-nexus-accent-primary">IA</span> já está em
             produção.
-            <br />A diferença e ter ou Não ter uma infraestrutura sob controle.
+            <br />A diferença é ter ou não ter uma infraestrutura sob controle.
           </h2>
           <button
             onClick={scrollToForm}
